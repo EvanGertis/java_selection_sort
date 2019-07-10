@@ -8,7 +8,14 @@ public class Main {
 
         printArray(intArray);
 
-
+        for(int i = 0; i < intArray.length; i++){
+            int largest = intArray[i];
+            for(int j = 0; j < intArray.length -1; j++){
+                if(intArray[j] > largest){
+                    swap(intArray, i, j);
+                }
+            }
+        }
 
         printArray(intArray);
     }
